@@ -31,7 +31,7 @@ const options = {
     wasmUrl: window.location.origin + '/wasm/',
 };
 
-const SERVER_URL = "https://cambridge-production.up.railway.app/";
+const SERVER_URL = "https://api.icfls.com/";
 // const SERVER_URL = "http://localhost:4000/";
 
 // --- Dummy Data & Helper Components ---

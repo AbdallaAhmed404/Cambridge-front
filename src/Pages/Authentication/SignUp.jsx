@@ -9,7 +9,7 @@ import "../../Style/btn.css"
 // نقطة التوقف للموبايل
 const MOBILE_BREAKPOINT = 768; 
 
-const BACKEND_URL = "https://cambridge-production.up.railway.app";
+const BACKEND_URL = "https://api.icfls.com";
 // const BACKEND_URL = "http://localhost:4000";
 
 const countries = [

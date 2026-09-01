@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 
-const BACKEND_URL = "https://cambridge-production.up.railway.app";
+const BACKEND_URL = "https://api.icfls.com";
 // const BACKEND_URL = "http://localhost:4000";
 
 const ActivateResourceModal = ({ onClose, onResourceAdded }) => {

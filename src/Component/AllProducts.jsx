@@ -11,7 +11,7 @@ import '../Style/btn.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faCircleQuestion, faBars, faChalkboardTeacher, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 
-const BACKEND_URL = "https://cambridge-production.up.railway.app";
+const BACKEND_URL = "https://api.icfls.com";
 // const BACKEND_URL = "http://localhost:4000";
 
 const SIDEBAR_WIDTH = '70px';

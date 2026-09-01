@@ -24,8 +24,8 @@ import {
 // -----------------------------------------------------------
 // 1. الثوابت
 // -----------------------------------------------------------
-const BASE_URL = 'https://cambridge-production.up.railway.app/';
-const BACKEND_URL = "https://cambridge-production.up.railway.app"; 
+const BASE_URL = 'https://api.icfls.com/';
+const BACKEND_URL = "https://api.icfls.com"; 
 const SIDEBAR_WIDTH = '70px'; 
 const SLIDE_OUT_WIDTH = '280px'; 
 

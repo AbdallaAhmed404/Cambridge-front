@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { toast } from 'react-hot-toast'; // لاستخدام الـ Toaster الموجود في App.jsx
 
-const BACKEND_URL = "https://cambridge-production.up.railway.app/user";
+const BACKEND_URL = "https://api.icfls.com/user";
 // const BACKEND_URL = "http://localhost:4000/user";
 
 export default function ActivateAccount() {

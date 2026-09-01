@@ -12,7 +12,7 @@ const CODE_LENGTH_OPTIONS = [16, 12];
 // نقطة التوقف للتصميم (breakpoint)
 const MOBILE_BREAKPOINT = 768;
 
-const BACKEND_URL = "https://cambridge-production.up.railway.app";
+const BACKEND_URL = "https://api.icfls.com";
 // const BACKEND_URL = "http://localhost:4000";
 
 const CodeCheckerPage = ({ onGoBack, onCodeCheckSuccess }) => {

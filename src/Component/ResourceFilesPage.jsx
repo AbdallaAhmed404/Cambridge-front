@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faFilePdf, faVolumeUp, faPlayCircle, faBookOpen, faCircleQuestion, faBars, faChalkboardTeacher, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 
 // const BASE_URL = 'http://localhost:4000'; 
-const BASE_URL = 'https://cambridge-production.up.railway.app';
+const BASE_URL = 'https://api.icfls.com';
 
 
 // -----------------------------------------------------------
