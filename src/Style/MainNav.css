@@ -1,0 +1,150 @@
+/* Import Mulish */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: "Inter", sans-serif !important;
+}
+
+/* NAVBAR */
+.cambridge-nav {
+  width: 100%;
+  background: #f8f9fa;
+  top: 0;
+  z-index: 999;
+}
+
+/* ... (باقي التنسيقات غير المتغيرة مثل cambridge-container, cambridge-logo, go-badge) ... */
+
+.cambridge-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.cambridge-logo a {
+  color: rgb(38, 40, 93);
+  font-size: 0.96rem;
+  text-decoration: none;
+}
+
+.go-badge {
+  background: rgb(38, 40, 93);
+  color: white;
+  padding: 2px 8px;
+  margin-left: 3px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* LINKS - التنسيق الأساسي للشاشات الكبيرة */
+.cambridge-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out; /* لتحريك القائمة عند الفتح/الإغلاق */
+}
+
+.cambridge-links a {
+  text-decoration: none;
+  color: #2a2a2a;
+  font-size: 1.01rem;
+  transition: opacity 0.2s ease;
+}
+
+.cambridge-links a:hover {
+  opacity: 0.6;
+}
+
+/* --- MOBILE MENU STYLES --- */
+
+/* 1. زر الهامبرغر */
+.menu-toggle-btn {
+  display: none; /* إخفاء الزر افتراضياً */
+  background: none;
+  border: 1px solid #ccc; /* إطار رمادي خفيف */
+  border-radius: 4px;
+  padding: 10px 15px; /* حجم الأيقونة في الصورة */
+  cursor: pointer;
+  z-index: 1001; /* فوق القائمة */
+}
+
+.menu-toggle-btn .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 2. الأوفرلاي لتغطية باقي الشاشة */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+}
+
+/* 3. تنسيقات شاشات الموبايل */
+@media (max-width: 900px) {
+  /* إظهار زر الهامبرغر */
+  .menu-toggle-btn {
+    display: block;
+  }
+  
+  /* تنسيق القائمة لتعمل كقائمة منسدلة */
+  .cambridge-links {
+    /* إخفاء القائمة عن العرض */
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px; /* عرض القائمة المنسدلة */
+    background: #fff;
+    padding: 80px 20px 20px;
+    z-index: 1000;
+    
+    /* إخفاء القائمة خارج الشاشة افتراضياً */
+    transform: translateX(100%);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* تفعيل عرض القائمة عند إضافة فئة 'active' */
+  .cambridge-links.active {
+    transform: translateX(0);
+  }
+
+  /* تنسيق عناصر القائمة الفردية */
+  .cambridge-links li {
+    margin: 20px 0;
+  }
+  
+  .cambridge-links li a {
+    font-size: 1.2rem; /* تكبير الخط داخل القائمة المنسدلة */
+    color: #343a40; /* لون نص الروابط */
+    font-weight: 500;
+  }
+
+  /* إظهار الأوفرلاي عند فتح القائمة */
+  .cambridge-nav.menu-open .menu-overlay {
+    display: block;
+  }
+  
+  /* التأكد من أن الـ container له padding مناسب */
+  .cambridge-container {
+    padding: 10px 20px;
+  }
+}

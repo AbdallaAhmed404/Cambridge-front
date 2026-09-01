@@ -1,0 +1,42 @@
+.subnav-header {
+  background: linear-gradient(90deg, #C19A6B, #5C4033);
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.subnav-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* الطول على قد الكلام */
+}
+
+.scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scroll-text {
+  display: inline-block;
+  animation: scroll-left 18s linear infinite;
+}
+
+.subnav-text {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: #fff;
+  margin: 6px 0; /* 👈 ده اللي بيخلي الطول على قد الكلام */
+  letter-spacing: 0.5px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

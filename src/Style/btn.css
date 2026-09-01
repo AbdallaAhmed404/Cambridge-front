@@ -1,0 +1,31 @@
+.btn {
+  font-size: 1rem;
+  text-decoration: underline;
+  line-height: 1;
+  background-color: rgb(29, 60, 71);
+  color: white; /* لون النص */
+  padding: 12px 16px; /* نفس px-4 py-3 تقريبا */
+  border: none; /* لو مش عايز حد */
+  transition: background-color 0.3s; /* عشان يكون السوايخ ناعم */
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: rgb(233, 204, 30);
+  color: black; /* ممكن تغير لون النص لو تحب */
+}
+
+.btn-dark {
+  border: solid 1px black;
+  font-size: 1rem;
+  text-decoration: underline;
+  line-height: 1;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0); /* لون النص */
+  padding: 10px 16px; /* نفس px-4 py-3 تقريبا */
+  transition: background-color 0.3s; /* عشان يكون السوايخ ناعم */
+}
+.btn-dark:hover {
+  background-color: rgb(29, 60, 71);
+  color: rgb(255, 255, 255); /* ممكن تغير لون النص لو تحب */
+}
